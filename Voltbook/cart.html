@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Voltbook — Cart</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">Voltbook ⚡</a></div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="offers.html">Offers</a>
+      <a href="cart.html">Cart <span id="cart-count-header">0</span></a>
+      <button id="darkToggle" class="icon-btn">🌙</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Your Cart</h1>
+    <section id="cartItems" class="cart-items"></section>
+
+    <section class="cart-summary">
+      <div>Subtotal: <span id="cartSubtotal">₹0</span></div>
+      <div>Discounts: <span id="cartDiscount">₹0</span></div>
+      <div><strong>Total: <span id="cartTotal">₹0</span></strong></div>
+      <div class="form-row">
+        <button id="checkoutBtn" class="btn">Proceed to Checkout</button>
+        <button id="clearCartBtn" class="btn btn-ghost">Clear Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 Voltbook</div>
+  </footer>
+</body>
+</html>

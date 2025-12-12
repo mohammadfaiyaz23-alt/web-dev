@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        :root{
+            --primary-color: rgb(146, 227, 240);
+        }
+        *{
+
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+           
+            color: rgb(48, 48, 8);
+            position: relative;
+            border: 3px solid rgb(42, 100, 70);
+            width: 550px;
+            height: 600px;
+            padding: 52px 55px px 34px;
+            border-radius: 18px;
+            box-shadow: 5px 5px 5px 5px rgb(106, 238, 214);
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            color: rgb(190, 134, 198)
+        
+         
+        }
+        
+        /*span{
+            background-color: rgba(41, 176, 37, 0.775);
+            color: rgb(45, 96, 184);
+          
+    
+        }*/
+        body{
+            
+            background-image: url("https://images.pexels.com/photos/1435752/pexels-photo-1435752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+            padding: 100px 200px 200px 500px;
+            background-repeat: no-repeat;
+            
+
+            
+            
+        
+        }
+        button{
+            background-color: rgb(179, 221, 149);
+            border-radius: 300px;
+            height: 30px;
+            width: 60px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(73, 190, 211);
+        }
+        span{
+            text-align: center;
+        }
+    
+        u{
+            
+            cursor: pointer;
+        }
+        div u small{
+            padding: 0px 0px 0px 0px;
+            
+        }
+        header{f
+            text-align: center;
+            /*text-indent: 44px;*/
+            padding: 33px;
+            text-shadow: 2px 2px 4px blue;
+           
+            
+        }
+        div{
+            text-align: center;
+
+        }
+        div label small{
+            display: flex;
+            /* justify-content: center; */
+            padding: 5px 0px 0px 160px;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header><h1>Login</h1></header>
+        <main>
+            <div >
+            <label><b>Username or email</b><label>
+                <br>
+                <input type="text"  placeholder="eg - abc@gmail.com">
+            </div>
+            <br>
+            <div>
+                <b>Password</b>
+                <br>
+                <input type="password" placeholder="Enter password" >
+
+            </div>
+            <div>
+                <label><small><input type="checkbox">Remember me</small></label>
+                <br>
+                <u><id="forgot" small>forgot password</small></u>
+            </div>
+            <br><br>
+            <div>
+                <button id="log" type="submit">login</button>
+            </div>
+            <div class="sign up">
+                <label><smal>Don't have an account?</smal></label>
+                <a id="sign" href="">sign up</a>
+            </div>
+        </main>
+    </div>
+    <script>
+        document.getElementById("log").addEventListener('click',()=>{
+            alert("you are logging in")
+        })
+        document.getElementById("sign").addEventListener('click',()=>{
+            confirm("do you wan't to sign up")
+        })
+        document.getElementById("for").addEventListener('contextmenu',()=>{
+            confirm("find email with code")
+        })
+    </script>
+</body>
+   
+    
+    
+</html>

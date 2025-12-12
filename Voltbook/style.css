@@ -1,0 +1,78 @@
+:root{
+  --bg:#0f1720; --card:#12161a; --muted:#9aa7b2; --accent:#00aaff; --accent2:#00ff88; --glass:rgba(255,255,255,0.03); --text:#e7eef5;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;height:100%;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--accent);text-decoration:none}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:linear-gradient(180deg,rgba(0,0,0,0.35),transparent);position:sticky;top:0;z-index:60}
+.brand a{font-weight:700;font-size:1.05rem;color:var(--accent)}
+.main-nav{display:flex;gap:12px;align-items:center}
+.main-nav a{color:var(--text);padding:6px 8px;border-radius:6px}
+.icon-btn{background:transparent;border:0;color:var(--text);cursor:pointer;padding:6px;border-radius:8px}
+
+/* layout */
+.container{max-width:1100px;margin:18px auto;padding:0 16px}
+.hero{display:flex;gap:20px;align-items:center;justify-content:space-between;padding:22px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:10px}
+.hero-text{max-width:640px}
+.hero h1{margin:0 0 8px}
+.lead{color:var(--muted);margin-bottom:12px}
+.hero-ctas{display:flex;gap:10px}
+.btn{background:var(--accent);color:#001018;border:0;padding:10px 14px;border-radius:8px;cursor:pointer;font-weight:700}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--text)}
+.sale-line{margin-top:12px;color:#ffb86b;font-weight:700}
+
+/* features */
+.features{display:flex;gap:16px;margin-top:18px;flex-wrap:wrap}
+.features article{background:var(--card);padding:14px;border-radius:10px;flex:1;min-width:200px}
+
+/* product grid */
+.controls-row{display:flex;gap:10px;align-items:center;margin:12px 0;flex-wrap:wrap}
+.controls-row input, .controls-row select{padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:var(--card);color:var(--text)}
+.spacer{flex:1}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:14px}
+.card{background:var(--card);padding:12px;border-radius:10px}
+.prod-img{width:100%;height:160px;object-fit:cover;border-radius:8px;background:#0a1014}
+.prod-title{margin:8px 0 4px;font-weight:700}
+.prod-desc{color:var(--muted);font-size:0.95rem}
+
+/* offers */
+.offer-hero{text-align:center;padding:18px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:10px}
+.offers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:16px}
+.offer-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:14px;border-radius:10px}
+.offer-meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+
+/* reviews */
+.reviews-section{margin-top:22px;background:var(--card);padding:14px;border-radius:10px}
+.review-slot{min-height:60px;display:flex;align-items:center}
+.review-controls{display:flex;gap:10px;margin-top:8px}
+
+/* cart */
+.cart-items{margin:12px 0}
+.cart-item{display:flex;gap:12px;align-items:center;padding:10px;background:rgba(255,255,255,0.02);border-radius:8px;margin-bottom:8px}
+.cart-item img{width:84px;height:60px;object-fit:cover;border-radius:6px}
+.cart-summary{margin-top:12px;background:var(--card);padding:12px;border-radius:8px}
+
+/* forms */
+.contact-form{display:flex;flex-direction:column;gap:8px;max-width:640px}
+.contact-form input,.contact-form textarea{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:var(--text)}
+.form-row{display:flex;gap:10px;align-items:center;margin-top:10px}
+
+/* footer */
+.site-footer{margin-top:22px;padding:16px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02)}
+
+/* modal & overlays (script toggles display:block) */
+.modal, .overlay {position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);z-index:120}
+.modal .modal-card{background:var(--card);padding:16px;border-radius:10px;max-width:900px;width:92%;display:flex;gap:12px}
+.modal .modal-img{width:320px;height:220px;object-fit:cover;border-radius:8px}
+
+/* responsive */
+@media (max-width:800px){
+  .hero{flex-direction:column;align-items:flex-start}
+  .modal .modal-card{flex-direction:column}
+  .prod-img{height:140px}
+}
+
+/* light mode variables (toggle by adding .light-mode to documentElement) */
+.light-mode {
+  --bg:#f5f7fb; --card:#ffffff; --muted:#55626b; --text:#0f1720; --accent:#0077cc; --accent2:#00a86b; --glass:rgba(0,0,0,0.03)
+}

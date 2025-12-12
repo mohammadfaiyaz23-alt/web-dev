@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Voltbook — Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">Voltbook ⚡</a></div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="offers.html">Offers</a>
+      <a href="cart.html">Cart <span id="cart-count-header">0</span></a>
+      <button id="darkToggle" class="icon-btn">🌙</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="controls-row">
+      <input id="searchInput" placeholder="Search laptops (name/specs)..." />
+      <select id="priceFilter">
+        <option value="all">All prices</option>
+        <option value="0-80000">Under ₹80,000</option>
+        <option value="80000-110000">₹80k–₹110k</option>
+        <option value="110000-999999">Above ₹110k</option>
+      </select>
+      <select id="sortSelect">
+        <option value="">Sort by</option>
+        <option value="low-high">Price: Low → High</option>
+        <option value="high-low">Price: High → Low</option>
+      </select>
+      <div class="spacer"></div>
+      <button id="openCartBtn" class="btn">Open Cart (<span id="cart-count">0</span>)</button>
+    </section>
+
+    <section id="productGrid" class="product-grid"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 Voltbook</div>
+  </footer>
+</body>
+</html>

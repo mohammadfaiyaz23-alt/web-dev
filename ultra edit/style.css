@@ -1,0 +1,42 @@
+
+        *{
+            box-sizing: border-box;
+        }
+        
+        nav {
+            justify-content: center;
+            transform: translatey(20%);
+            
+            justify-content: space-around;
+            display: flex;
+            cursor: pointer;
+        }
+        .logo{
+            transform: translatex(-20%);
+        }
+
+        .right ul{
+            display: flex;
+            transform: translatex(2%);
+           
+            list-style: none;
+            gap: 33px;
+        }
+        li{
+            
+            justify-content: center;
+            display: flex;
+        }
+        .first div{
+            margin: 33px;
+            padding: 0px 80px;
+
+            
+        }
+        .second {
+            display: flex;
+            align-content: center;
+            align-items: center;
+        }
+
+       

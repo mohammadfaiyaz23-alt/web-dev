@@ -1,0 +1,33 @@
+.border{
+    border: 2px solid red;
+    margin: 2px;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.invert{
+    filter: invert(1);
+}
+.bb{
+   background-color: #121212;
+   color: gray;
+   
+   border: none;
+   outline: none;
+}
+.bb:hover{
+   font-size: 0.90rem;
+   color: rgb(243, 233, 233);
+   cursor: pointer;
+
+}
+.pl{
+    width: 48px;
+    filter: invert(1);
+}

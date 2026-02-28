@@ -1,0 +1,32 @@
+h1{
+    background-color: rgb(219, 181, 163);
+    text-align: center;
+}
+
+b{
+    background-color: rgb(193, 223, 173);
+}
+footer{
+    color: red;
+}
+body{
+    background-color: rgb(215, 222, 196);
+    padding: 2px;
+    margin: 0;
+}
+input{
+    cursor: pointer;
+}
+/* main{
+    text-align: center;
+} */
+form{
+    text-indent: px;
+}
+nav ul li{
+    display: inline;
+    padding: 3px;
+    margin: 0;
+    
+    
+}

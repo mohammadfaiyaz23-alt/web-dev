@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Voltbook — Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">Voltbook ⚡</a></div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="offers.html">Offers</a>
+      <a href="cart.html">Cart <span id="cart-count-header">0</span></a>
+      <button id="darkToggle" class="icon-btn" title="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Voltbook — Power in Every Click</h1>
+        <p class="lead">High-performance, eco-friendly laptops for students, creators, and gamers.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="products.html">Shop Models</a>
+          <a class="btn btn-ghost" href="offers.html">August Festive Offers</a>
+        </div>
+        <div class="sale-line">
+          🔥 <strong>August Festive Sale</strong> — Up to <strong>30% OFF</strong> • Ends in <span id="home-timer">00d 00h 00m 00s</span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img alt="Voltbook hero" src="data:image/svg+xml;utf8,
+          <svg xmlns='http://www.w3.org/2000/svg' width='800' height='420'>
+            <rect width='100%' height='100%' fill='%230b1220' rx='12'/>
+            <text x='50%' y='50%' fill='%2300aaff' font-size='48' text-anchor='middle' font-family='Arial'>Voltbook</text>
+          </svg>" />
+      </div>
+    </section>
+
+    <section class="features">
+      <article>
+        <h3>Long Battery Life</h3>
+        <p>Work all day with optimized power management.</p>
+      </article>
+      <article>
+        <h3>Eco-Friendly</h3>
+        <p>Materials chosen for reduced environmental impact.</p>
+      </article>
+      <article>
+        <h3>Performance</h3>
+        <p>Powerful CPUs and fast SSDs for every workflow.</p>
+      </article>
+    </section>
+
+    <section class="reviews-section">
+      <h2>Customer Reviews</h2>
+      <div id="reviewSlot" class="review-slot"></div>
+      <div class="review-controls">
+        <button id="prevReview" class="icon-btn">◀</button>
+        <button id="nextReview" class="icon-btn">▶</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 Voltbook</div>
+    <div class="small">Made for Digital Marketing project</div>
+  </footer>
+</body>
+</html>

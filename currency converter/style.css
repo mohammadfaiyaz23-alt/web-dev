@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    margin: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    background-color: #9BB1FF;
+}
+
+.container {
+    border: 2px solid black;
+    background-color: white;
+    width: 56vh;
+    min-height: 60vh;
+
+}
+
+.head {
+    text-align: center;
+    background-color: #2E5EAA;
+    color: rgb(216, 213, 213)
+}
+
+.input {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input p {
+    margin-bottom: 0.4rem;
+}
+
+.flags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* width: 7rem; */
+}
+
+.fromFlag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 0.6rem;
+}
+.flags select{
+    border: none;
+}
+
+.toFlag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 0.6rem;
+}
+
+.flags img {
+    width: 3rem;
+    
+}
+.btn{
+    text-align: center;
+margin-top: 2rem;
+
+}
+.btn button{
+    text-align: center;
+width: 10rem;
+height: 1.75rem;
+font-size: 1rem;
+cursor: pointer;
+background-color: #2E5EAA;
+color: #fff;
+}
